@@ -14,7 +14,7 @@ Flash Skeleton is a Python script that helps with converting Flash Applications 
 * pyautogui
 Note: There may be limitations for pynput if you are on Linux or MacOS (see [here](https://pynput.readthedocs.io/en/latest/limitations.html) for more details.)
  ## Set Up (Per Application)
- 1. At the top of the python file, edit the last folder in the `assetsDirectory` path string to reflect the name of your app (e.g. `src/assets/persuasion-map`.)
+ 1. At the top of the python file, edit the last folder in the `assetsDirectory` path string to reflect the name of your app (e.g. `/assets/persuasion-map`.)
  2. Edit the `imagePrefix` variable to give all your asset names a common beginning (Angular gets confused if assets between components have the same name so this tries to prevent that.) I prefer to make it two letters followed by a dash, e.g. `pm-` for the app Persuasion Map.
  3. Choose RGB values for the arrays `buttonRGB` and `inputRGB` for asset scraping. Try to make them colors that will not appear in your app. You will see what these do later.
  4. Enter the target dimensions for your web app in `backgroundDimensions` (width, height).
@@ -36,7 +36,7 @@ Note 1: Each of the elements have the styling `position: absolute`. This is admi
 
 Note 2: Backgrounds will automatically have the class `frame`. By default, `frame` will have `width` and `height` attributes corresponding to the target dimensions, as well as `position: relative`, but you may change this as you see fit.
 
-Note 3: Because the app assets are already stored in the `src/assets/[app-name]` directory structure, paths in the files do not need to be changed.
+Note 3: Because the app assets are already stored in the `/assets/[app-name]` directory structure, paths in the files do not need to be changed.
 
 Note 4: The scaling factor for both width and height are printed at the beginning of each use (`xSizingScaleFactor` and `ySizingScaleFactor`.) This will make any manual sizing easier.
 
