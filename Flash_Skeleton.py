@@ -14,7 +14,7 @@ print("Press \"[\" to begin")
 print("Press \"]\" to stop")
 
 # Change per project
-assetsDirectory = "src/assets/[app-name]"
+assetsDirectory = "/assets/[app-name]"
 imagePrefix = "[your prefix]"
 buttonRGB = [0, 0, 0]
 inputRGB = [0, 0, 0]
